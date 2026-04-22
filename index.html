@@ -1,188 +1,116 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Camila Renata | Portfólio</title>
+    <title>Camila Renata | Publicitária & Designer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
-        /* Configurações Globais e Minimalismo */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            background-color: #fcfcfc;
-            color: #000000;
-            line-height: 1.6;
-        }
-        
-        /* Paleta de Cores e Tipografia */
-        :root {
-            --vermelho: #B22222;
-            --preto: #000000;
-        }
-        
-        /* Cabeçalho */
-        header {
-            padding: 100px 20px;
-            text-align: center;
-            background-color: var(--preto);
-            color: #ffffff;
-        }
-        header h1 {
-            font-size: 4rem; /* Letras grandes */
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            margin-bottom: 10px;
-        }
-        header h2 {
-            font-size: 1.5rem;
-            color: var(--vermelho);
-            font-weight: 400;
-            letter-spacing: 6px;
-            text-transform: uppercase;
-        }
-
-        /* Seções */
-        section {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 80px 20px;
-        }
-        .titulo-secao {
-            font-size: 3rem;
-            color: var(--preto);
-            border-bottom: 4px solid var(--vermelho);
-            padding-bottom: 10px;
-            margin-bottom: 40px;
-            text-transform: uppercase;
-        }
-
-        /* Textos */
-        p {
-            font-size: 1.1rem;
-            margin-bottom: 20px;
-            color: #333333;
-        }
-
-        /* Portfólio Grid */
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 40px;
-        }
-        @media (min-width: 768px) {
-            .portfolio-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-        .projeto {
-            background-color: #ffffff;
-            border: 1px solid #eaeaea;
-            padding: 20px;
-            transition: transform 0.3s ease;
-        }
-        .projeto:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-        }
-        .projeto h3 {
-            font-size: 1.8rem;
-            color: var(--vermelho);
-            margin-bottom: 10px;
-        }
-        
-        /* Área para as Fotos (Placeholder) */
-        .foto-placeholder {
-            width: 100%;
-            height: 300px;
-            background-color: #f0f0f0;
-            border: 2px dashed var(--vermelho);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: #666;
-            margin-bottom: 15px;
-            font-size: 0.9rem;
-            padding: 20px;
-        }
-        
-        /* Imagens Reais (Quando você substituir) */
-        .foto-real {
-            width: 100%;
-            height: auto;
-            display: none; /* Mude para 'block' quando colocar o link da foto real */
-        }
-
-        /* Contato */
-        .contato-info {
-            font-size: 1.2rem;
-            font-weight: bold;
-        }
-        .contato-info span {
-            color: var(--vermelho);
-        }
+        body { font-family: 'Inter', sans-serif; background-color: #fcfcfc; }
+        h1, h2 { font-family: 'Playfair Display', serif; }
+        .section-title { border-left: 4px solid #1a1a1a; padding-left: 1rem; }
     </style>
 </head>
-<body>
+<body class="text-gray-900 leading-relaxed">
 
-    <header>
-        <h1>Camila Renata</h1>
-        <h2>Especialista em Comunicação Visual & Fotografia</h2>
+    <header class="max-w-5xl mx-auto px-6 pt-20 pb-12">
+        <h1 class="text-5xl md:text-7xl mb-4">Camila Renata</h1>
+        <p class="text-xl md:text-2xl text-gray-600 font-light max-w-2xl">
+            Publicitária e Designer Gráfico especializada em comunicação visual, fotografia técnica e prospecção estratégica.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-4 text-sm font-medium">
+            <a href="mailto:martinsgalvao.c@gmail.com" class="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition">Email</a>
+            <a href="https://wa.me/5511964286008" class="border border-black px-6 py-3 rounded-full hover:bg-black hover:text-white transition">WhatsApp</a>
+            <span class="px-6 py-3 text-gray-500">São Bernardo do Campo - SP</span>
+        </div>
     </header>
 
-    <section id="perfil">
-        <h2 class="titulo-secao">Perfil Estratégico</h2>
-        <p>Profissional multidisciplinar com sólida trajetória na intersecção entre design estratégico, comunicação visual e fotografia profissional. Especialista em criar narrativas visuais focadas na conversão e no posicionamento de mercado.</p>
-        <p>Atuação estratégica direcionada à valorização de marcas e produtos através de uma estética rigorosa e execução "hands-on".</p>
-    </section>
+    <main class="max-w-5xl mx-auto px-6 space-y-20 pb-20">
 
-    <section id="experiencia">
-        <h2 class="titulo-secao">Experiência</h2>
-        <div style="margin-bottom: 30px;">
-            <h3 style="font-size: 1.5rem; color: #B22222;">Analista de Marketing e Comunicação | Home Fine Móveis</h3>
-            <p style="font-style: italic; color: #666;">2025 – 2026</p>
-            <p>Desenvolvimento de propostas de branding e reposicionamento estratégico para o mercado de móveis de alto padrão. Gestão de comunicação visual de ponta a ponta, fotografia profissional de ambientes e atendimento consultivo focado no direcionamento para fechamento comercial.</p>
-        </div>
-        <div>
-            <h3 style="font-size: 1.5rem; color: #B22222;">Proprietária e Designer | Studio Rosso Art e Design</h3>
-            <p style="font-style: italic; color: #666;">Experiência Autônoma</p>
-            <p>Fundação e gestão completa de estúdio autoral. Domínio de todo o ciclo de negócio, desde a concepção artística minimalista até marketing, vendas e atendimento direto ao cliente.</p>
-        </div>
-    </section>
+        <section>
+            <h2 class="text-2xl mb-6 section-title">Perfil</h2>
+            <p class="text-lg text-gray-700 max-w-3xl">
+                Bacharel em Publicidade e Propaganda com olhar voltado à estética e funcionalidade. Minha trajetória combina a gestão criativa do <strong>Studio Rosso</strong> com a expertise técnica no setor de <strong>mobiliário de alto padrão</strong>. Sou movida por desafios que exigem adaptação, empatia e proatividade, seja no desenvolvimento de marcas ou na viabilização de parcerias comerciais.
+            </p>
+        </section>
 
-    <section id="portfolio">
-        <h2 class="titulo-secao">Portfólio</h2>
-        
-        <div class="portfolio-grid">
-            <div class="projeto">
-                <div class="foto-placeholder">
-                    [Espaço para Mockup do Rebranding e Identidade Visual]
+        <section>
+            <h2 class="text-2xl mb-8 section-title">Experiência Recente</h2>
+            <div class="bg-white border border-gray-100 p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+                <div class="flex flex-col md:flex-row justify-between mb-4">
+                    <h3 class="text-xl font-semibold">Home Fine Móveis & Ziar Decor</h3>
+                    <span class="text-gray-500">Consultoria & Comunicação Visual</span>
                 </div>
-                <h3>Estratégia & Branding</h3>
-                <p>Projeto de reestruturação de marca e posicionamento visual desenvolvido durante a atuação na Home Fine. Foco em alinhar a comunicação estética com as exigências do mercado de alto padrão.</p>
+                <p class="text-gray-700 mb-4 italic">Foco em Parcerias Estratégicas e Fotografia de Interiores.</p>
+                <ul class="list-disc list-inside space-y-2 text-gray-600">
+                    <li>Interface direta com arquitetos e corretores para viabilização de projetos personalizados.</li>
+                    <li>Fotografia técnica de showrooms e projetos finalizados (Nikon D7200), focando em detalhes de marcenaria e acabamentos.</li>
+                    <li>Gestão de relacionamento (CRM) e acompanhamento de funil de vendas.</li>
+                </ul>
             </div>
+        </section>
 
-            <div class="projeto">
-                <div class="foto-placeholder">
-                    [Espaço para Fotografias de Ambientes / Técnicas com 50mm ou 10-20mm]
+        <section class="grid md:grid-cols-2 gap-8">
+            <div>
+                <h3 class="text-lg font-bold mb-4 uppercase tracking-wider">Design & Empreendedorismo</h3>
+                <div class="space-y-6">
+                    <div>
+                        <h4 class="font-semibold text-black">Studio Rosso Art e Design</h4>
+                        <p class="text-sm text-gray-500">Proprietária / Designer</p>
+                        <p class="text-gray-600 text-sm mt-2">Gestão ponta a ponta: criação de artes, produção de quadros decorativos, marketing digital e atendimento ao cliente.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-black">Design Gráfico Freelancer</h4>
+                        <p class="text-gray-600 text-sm mt-2">Criação de logotipos, materiais impressos e gestão visual para redes sociais sob o Método Pedro Panetto.</p>
+                    </div>
                 </div>
-                
-                <h3>Fotografia Profissional</h3>
-                <p>Captação técnica de interiores e detalhes de marcenaria. Utilização de equipamentos DSLR com foco na valorização do produto através do controle rigoroso de luz e enquadramento arquitetônico.</p>
             </div>
-        </div>
-    </section>
+            <div>
+                <h3 class="text-lg font-bold mb-4 uppercase tracking-wider">Habilidades Adaptativas</h3>
+                <div class="space-y-6">
+                    <div>
+                        <h4 class="font-semibold text-black">Gestão e Mobilidade</h4>
+                        <p class="text-gray-600 text-sm mt-2">Experiência como motorista (Uber e Transporte Especializado), desenvolvendo resiliência, inteligência emocional e comunicação eficaz com diversos perfis de público.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="contato">
-        <h2 class="titulo-secao">Contato</h2>
-        <p class="contato-info">📍 <span>Localização:</span> São Bernardo do Campo - SP</p>
-        <p class="contato-info">📧 <span>E-mail:</span> martinsgalvao.c@gmail.com</p>
-        <p class="contato-info">📞 <span>Telefone:</span> (11) 96428-6008</p>
-    </section>
+        <section class="grid md:grid-cols-3 gap-12 pt-10 border-t border-gray-100">
+            <div>
+                <h3 class="font-bold mb-4 uppercase text-xs tracking-widest">Ferramentas</h3>
+                <ul class="text-gray-600 space-y-1 text-sm">
+                    <li>Photoshop (Avançado)</li>
+                    <li>Illustrator (Avançado)</li>
+                    <li>InDesign (Intermediário)</li>
+                    <li>Lightroom (Edição de Foto)</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold mb-4 uppercase text-xs tracking-widest">Formação</h3>
+                <ul class="text-gray-600 space-y-1 text-sm">
+                    <li class="font-semibold text-black">Publicidade e Propaganda</li>
+                    <li>Univ. Metodista de São Paulo</li>
+                    <li class="pt-2 font-semibold text-black">Design de Marcas</li>
+                    <li>Método Pedro Panetto</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold mb-4 uppercase text-xs tracking-widest">Fotografia</h3>
+                <ul class="text-gray-600 space-y-1 text-sm">
+                    <li>Telefoto Profissional</li>
+                    <li>Arquitetura e Interiores</li>
+                    <li>Equipamento Próprio</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-50 py-12 text-center">
+        <p class="text-gray-400 text-sm">© 2026 Camila Renata. Desenvolvido para apresentações de alto impacto.</p>
+    </footer>
 
 </body>
 </html>
