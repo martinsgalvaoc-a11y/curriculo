@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camila Renata | Portfólio</title>
+    <style>
+        /* Configurações Globais e Minimalismo */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #fcfcfc;
+            color: #000000;
+            line-height: 1.6;
+        }
+        
+        /* Paleta de Cores e Tipografia */
+        :root {
+            --vermelho: #B22222;
+            --preto: #000000;
+        }
+        
+        /* Cabeçalho */
+        header {
+            padding: 100px 20px;
+            text-align: center;
+            background-color: var(--preto);
+            color: #ffffff;
+        }
+        header h1 {
+            font-size: 4rem; /* Letras grandes */
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 10px;
+        }
+        header h2 {
+            font-size: 1.5rem;
+            color: var(--vermelho);
+            font-weight: 400;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+        }
+
+        /* Seções */
+        section {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+        .titulo-secao {
+            font-size: 3rem;
+            color: var(--preto);
+            border-bottom: 4px solid var(--vermelho);
+            padding-bottom: 10px;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+
+        /* Textos */
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #333333;
+        }
+
+        /* Portfólio Grid */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+        @media (min-width: 768px) {
+            .portfolio-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        .projeto {
+            background-color: #ffffff;
+            border: 1px solid #eaeaea;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+        .projeto:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+        .projeto h3 {
+            font-size: 1.8rem;
+            color: var(--vermelho);
+            margin-bottom: 10px;
+        }
+        
+        /* Área para as Fotos (Placeholder) */
+        .foto-placeholder {
+            width: 100%;
+            height: 300px;
+            background-color: #f0f0f0;
+            border: 2px dashed var(--vermelho);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #666;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            padding: 20px;
+        }
+        
+        /* Imagens Reais (Quando você substituir) */
+        .foto-real {
+            width: 100%;
+            height: auto;
+            display: none; /* Mude para 'block' quando colocar o link da foto real */
+        }
+
+        /* Contato */
+        .contato-info {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .contato-info span {
+            color: var(--vermelho);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Camila Renata</h1>
+        <h2>Especialista em Comunicação Visual & Fotografia</h2>
+    </header>
+
+    <section id="perfil">
+        <h2 class="titulo-secao">Perfil Estratégico</h2>
+        <p>Profissional multidisciplinar com sólida trajetória na intersecção entre design estratégico, comunicação visual e fotografia profissional. Especialista em criar narrativas visuais focadas na conversão e no posicionamento de mercado.</p>
+        <p>Atuação estratégica direcionada à valorização de marcas e produtos através de uma estética rigorosa e execução "hands-on".</p>
+    </section>
+
+    <section id="experiencia">
+        <h2 class="titulo-secao">Experiência</h2>
+        <div style="margin-bottom: 30px;">
+            <h3 style="font-size: 1.5rem; color: #B22222;">Analista de Marketing e Comunicação | Home Fine Móveis</h3>
+            <p style="font-style: italic; color: #666;">2025 – 2026</p>
+            <p>Desenvolvimento de propostas de branding e reposicionamento estratégico para o mercado de móveis de alto padrão. Gestão de comunicação visual de ponta a ponta, fotografia profissional de ambientes e atendimento consultivo focado no direcionamento para fechamento comercial.</p>
+        </div>
+        <div>
+            <h3 style="font-size: 1.5rem; color: #B22222;">Proprietária e Designer | Studio Rosso Art e Design</h3>
+            <p style="font-style: italic; color: #666;">Experiência Autônoma</p>
+            <p>Fundação e gestão completa de estúdio autoral. Domínio de todo o ciclo de negócio, desde a concepção artística minimalista até marketing, vendas e atendimento direto ao cliente.</p>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2 class="titulo-secao">Portfólio</h2>
+        
+        <div class="portfolio-grid">
+            <div class="projeto">
+                <div class="foto-placeholder">
+                    [Espaço para Mockup do Rebranding e Identidade Visual]
+                </div>
+                <h3>Estratégia & Branding</h3>
+                <p>Projeto de reestruturação de marca e posicionamento visual desenvolvido durante a atuação na Home Fine. Foco em alinhar a comunicação estética com as exigências do mercado de alto padrão.</p>
+            </div>
+
+            <div class="projeto">
+                <div class="foto-placeholder">
+                    [Espaço para Fotografias de Ambientes / Técnicas com 50mm ou 10-20mm]
+                </div>
+                
+                <h3>Fotografia Profissional</h3>
+                <p>Captação técnica de interiores e detalhes de marcenaria. Utilização de equipamentos DSLR com foco na valorização do produto através do controle rigoroso de luz e enquadramento arquitetônico.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2 class="titulo-secao">Contato</h2>
+        <p class="contato-info">📍 <span>Localização:</span> São Bernardo do Campo - SP</p>
+        <p class="contato-info">📧 <span>E-mail:</span> martinsgalvao.c@gmail.com</p>
+        <p class="contato-info">📞 <span>Telefone:</span> (11) 96428-6008</p>
+    </section>
+
+</body>
+</html>
